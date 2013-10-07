@@ -1,7 +1,7 @@
 javascript:(
   function(){
     colorDivList = $('div.g');
-    text = 'cm = [';
+    text = 'makeColorMap([';
     for (i=0;i<6;i++)
     {
 		str = colorDivList[i].getAttribute('style');
@@ -12,7 +12,7 @@ javascript:(
 	    blue  = colors[2]/255;
 	    text += red.toFixed(3) + ',' + green.toFixed(3) + ',' + blue.toFixed(3) + ';';   
     }
-    text += '];';
+    text += ']);';
     window.prompt ("Copy to clipboard: Ctrl+C, Enter", text);
   }
 )()
