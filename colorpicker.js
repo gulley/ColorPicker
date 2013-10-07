@@ -1,18 +1,20 @@
 javascript:(
   function(){
     colorDivList = $('div.g');
-    text = 'makeColorMap([';
-    for (i=0;i<6;i++)
-    {
+    text = "makeColorMap([";
+    for (i=0; i<6; i++) {
 		str = colorDivList[i].getAttribute('style');
 	    pat = /(\d+)/g;
 	    colors = str.match(pat);
-	    red   = colors[0]/255;
-	    green = colors[1]/255;
-	    blue  = colors[2]/255;
-	    text += red.toFixed(3) + ',' + green.toFixed(3) + ',' + blue.toFixed(3) + ';';   
+	    text += "'#";
+	    for (j=0; j<3; j++) {
+		    hexstr = parseInt(colors[j]).toString(16);
+		    hexstr = hexstr.length == 1 ? "0" + hexstr : hexstr;
+		    text += hexstr;
+	    }
+	    text += "';";
     }
-    text += ']);';
+    text += "]);";
     window.prompt ("Copy to clipboard: Ctrl+C, Enter", text);
   }
 )()
