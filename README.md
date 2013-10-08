@@ -1,18 +1,35 @@
 ColorPicker
 ===========
 
-Bookmarklet to generate nice colormaps for MATLAB
+Bookmarklet to generate nice colormaps for MATLAB.
 
-Start with this color generator
+The idea is to click on the bookmarklet and generate a MATLAB command based on the chosen colors.
+
+Installation
+============
+
+Take the provided Javascript and paste it into the place for a URL in a bookmark. Put the provided MATLAB code into
+your copy of MATLAB.
+
+Use 
+===
+
+Start with one of these color generators
 
 * http://vis4.net/labs/colorvis/embed.html?m=hcl&gradients=6
 * http://vis4.net/labs/colorvis/embed.html?m=lab&gradients=6
 * http://vis4.net/labs/colorvis/embed.html?m=hsv&gradients=6
 * http://vis4.net/labs/colorvis/embed.html?m=hsl&gradients=6
+ 
+Execute the bookmarklet code. It will prompt you with some code that you can then paste into MATLAB.
+Run it in MATLAB, and assuming you have the associated M-file (makeColorMap.m) ready to run, it will 
+create a color map based on what you chose in the Javascript color picker.
+
+Other links
+===========
+
+Here are some other color pickers that we could work with.
+
 * http://tristen.ca/hcl-picker/#/hlc/6/1/21313E/EFEE69
-
-I would like to make it work with this: 
-
 * https://vis4.net/labs/multihue/#colors=lemonchiffon,red,midnightblue|steps=9|bez=1|coL=1
  
-The idea is to click on the bookmarklet and generate a MATLAB command based on the chosen colors.
