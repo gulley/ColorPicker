@@ -1,18 +1,15 @@
 ColorPicker
 ===========
 
-Bookmarklet to generate nice colormaps for MATLAB.
+Bookmarklet to export colormaps from Gregor Aisch's colorvis tool to MATLAB.
 
 The idea is to click on the bookmarklet and generate a MATLAB command based on the chosen colors.
 
 Installation
-============
+------------
 
-Take the provided Javascript and paste it into the place for a URL in a bookmark. Put the provided MATLAB code into
-your copy of MATLAB.
-
-Use 
-===
+Usage
+------------
 
 Start with one of these color generators
 
@@ -26,7 +23,7 @@ Run it in MATLAB, and assuming you have the associated M-file (makeColorMap.m) r
 create a color map based on what you chose in the Javascript color picker.
 
 Other links
-===========
+------------
 
 Here are some other color pickers that we could work with.
 
