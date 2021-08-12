@@ -5,9 +5,6 @@ Bookmarklet to export colormaps from Gregor Aisch's colorvis tool to MATLAB.
 
 The idea is to click on the bookmarklet and generate a MATLAB command based on the chosen colors.
 
-Installation
-------------
-
 Usage
 ------------
 
